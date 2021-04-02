@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+    <script src="https://unpkg.com/mathjs@9.3.0/lib/browser/math.js"></script>
+
+  <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="result-container">
+            <div id="operation">
+                <p id="tocalculate"></p>
+                
+            </div>
+            <div id="result">
+                <p id="result_show"></p>
+            </div>
+        </div>
+        <div id="divider"></div>
+        <div id="all-buttons">
+            <div id="first-line">
+                <button value="AC">AC</button>
+                <button value="MS">MS</button>
+                <button value="MC">MC</button>
+                <button value="<">&lt;</button>
+                <button id="fx">f(x)</button>
+                <button value="%">%</button>
+                <button value="sqrt(">&radic;</button>
+                <button value="log(">Log()</button>
+                <button value="tan(">Tan</button>
+                <button value="cos(">Cos</button>
+                <button value="sin(">Sin</button>
+                
+                
+            </div>
+            <div id="second-container">
+                <div id="left-content">
+                    <button name="number" value="7">7</button>
+                    <button name="number" value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value=".">.</button>
+                    <button value="0">0</button>
+                    <button value="3.141592653589793">π</button>
+                </div>
+                <div id="right-content">
+                    <button value="x">X</button>
+                    <button value="/">&divide;</button>
+                    
+                    <button value="-">-</button>
+                   
+                    <button value="+">+</button>
+                    
+                    <button value="(">(</button>
+                    <button value=")">)</button>
+                    <button id="equal" name="equal" >=</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="memory">
+    </div>
+    
+    <div id="plot">
+        
+    </div>
+    <script src="index.js"></script>
+    <script src="mychart.js"></script>
+</body>
+
+</html>

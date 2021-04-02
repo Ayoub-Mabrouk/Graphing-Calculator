@@ -1,0 +1,146 @@
+$body-color: #efeeee;
+$second-color: #ff7904;
+* {
+    font-family: "poppins";
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    gap: 30px;
+    height: 100vh;
+    background-color: #cbcbcb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+@mixin number {
+    width: 60px;
+    border-radius: 10px;
+    margin: 13px;
+    padding: 8px 15px;
+    box-shadow: 5px 5px 10px rgb(218, 210, 210);
+    background-color: $body-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+@mixin operators {
+    width: 50px;
+    margin: 4px 9px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(230, 221, 221, 0.466);
+        border-radius: 6px;
+    }
+}
+#container {
+    
+    border-radius: 40px;
+    height: 700px;
+    width: 414px;
+    background-color: $body-color;
+    #result-container {
+        height: 100px;
+        text-align: right;
+        
+        #operation {
+            margin-top: 60px;
+            margin-right: 40px;
+            height: 50%;
+            outline: none;
+        }
+        #result {
+            margin-right: 40px;
+            outline: none;
+            p {
+                font-size: 24px;
+                font-weight: 500;
+                color: rgb(134, 128, 128);
+            }
+        }
+    }
+    #divider {
+        
+        margin: auto;
+        margin-top: 90px;
+        background-color: rgb(209, 214, 214);
+        height: 2px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    #all-buttons {
+        
+        #first-line {
+            
+            button {
+                color: $second-color;
+                @include operators();
+                
+            }
+        }
+        #second-container {
+            display: flex;
+            flex-direction: row;
+            #left-content {
+                width: 63%;
+                display: flex;
+                flex-wrap: wrap;
+                button {
+                    @include number();
+                    &:active {
+                        box-shadow:inset 5px 5px 10px rgb(218, 210, 210);
+                        font-size: 19px; 
+                    }
+                }
+                
+            }
+
+            #right-content {
+                justify-content: center;
+                align-items:center;
+                
+                width: 38%;
+                
+                display: flex;
+                flex-wrap: wrap;
+                button {
+                    color:$second-color ;
+                    text-align: center;
+                    @include operators();
+                }
+                & [name="equal"] {
+                    color: black;
+                    text-align: center;
+                    background-color: $second-color;
+                    border-radius: 20px;
+                    padding: 0px;
+                    width: 70%;
+                    height: 35px;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $second-color;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+#memory {
+    width: 15%;
+    border-radius: 40px;
+    height: 700px;
+    background-color: $body-color;
+    .memo {
+        text-align: right;
+        padding: 15px;
+        cursor: pointer;
+    }
+}

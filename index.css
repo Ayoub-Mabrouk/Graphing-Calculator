@@ -1,0 +1,176 @@
+* {
+  font-family: "poppins";
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  gap: 30px;
+  height: 100vh;
+  background-color: #cbcbcb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#container {
+  border-radius: 40px;
+  height: 700px;
+  width: 414px;
+  background-color: #efeeee;
+}
+
+#container #result-container {
+  height: 100px;
+  text-align: right;
+}
+
+#container #result-container #operation {
+  margin-top: 60px;
+  margin-right: 40px;
+  height: 50%;
+  outline: none;
+}
+
+#container #result-container #result {
+  margin-right: 40px;
+  outline: none;
+}
+
+#container #result-container #result p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #868080;
+}
+
+#container #divider {
+  margin: auto;
+  margin-top: 90px;
+  background-color: #d1d6d6;
+  height: 2px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+#container #all-buttons #first-line button {
+  color: #ff7904;
+  width: 50px;
+  margin: 4px 9px;
+}
+
+#container #all-buttons #first-line button:hover {
+  cursor: pointer;
+  background-color: rgba(230, 221, 221, 0.466);
+  border-radius: 6px;
+}
+
+#container #all-buttons #second-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#container #all-buttons #second-container #left-content {
+  width: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#container #all-buttons #second-container #left-content button {
+  width: 60px;
+  border-radius: 10px;
+  margin: 13px;
+  padding: 8px 15px;
+  -webkit-box-shadow: 5px 5px 10px #dad2d2;
+          box-shadow: 5px 5px 10px #dad2d2;
+  background-color: #efeeee;
+}
+
+#container #all-buttons #second-container #left-content button:hover {
+  cursor: pointer;
+}
+
+#container #all-buttons #second-container #left-content button:active {
+  -webkit-box-shadow: inset 5px 5px 10px #dad2d2;
+          box-shadow: inset 5px 5px 10px #dad2d2;
+  font-size: 19px;
+}
+
+#container #all-buttons #second-container #right-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#container #all-buttons #second-container #right-content button {
+  color: #ff7904;
+  text-align: center;
+  width: 50px;
+  margin: 4px 9px;
+}
+
+#container #all-buttons #second-container #right-content button:hover {
+  cursor: pointer;
+  background-color: rgba(230, 221, 221, 0.466);
+  border-radius: 6px;
+}
+
+#container #all-buttons #second-container #right-content [name="equal"] {
+  color: black;
+  text-align: center;
+  background-color: #ff7904;
+  border-radius: 20px;
+  padding: 0px;
+  width: 70%;
+  height: 35px;
+}
+
+#container #all-buttons #second-container #right-content [name="equal"]:hover {
+  cursor: pointer;
+  background-color: #ff7904;
+  border-radius: 20px;
+}
+
+#memory {
+  width: 15%;
+  border-radius: 40px;
+  height: 700px;
+  background-color: #efeeee;
+}
+
+#memory .memo {
+  text-align: right;
+  padding: 15px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
